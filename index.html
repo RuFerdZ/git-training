@@ -1,0 +1,52 @@
+<!-- create a login form for accepting username password, with a submit button that does nothing at the moment. 
+    The form should be centered and in the middle of the screen. Use css to make it look modern and minimalistic -->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+            }
+
+            .login-form {
+                width: 300px;
+                background-color: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px 0px #0000001a;
+            }
+
+            .login-form input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+            }
+
+            .login-form button {
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: none;
+                color: white;
+                background-color: #007BFF;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login-form">
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </body>
+    </html>
